@@ -1,0 +1,27 @@
+{
+  "name": "dropdown-component",
+  "version": "1.0.0",
+  "description": "(on ES6 classes and without `select` tag)",
+  "main": "dropdown.js",
+  "scripts": {
+    "lint": "eslint dropdown.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinatValiullov/dropdown-component.git"
+  },
+  "keywords": [
+    "dropdown",
+    "javascript",
+    "practice"
+  ],
+  "author": "4rontender <4rontender@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RinatValiullov/dropdown-component/issues"
+  },
+  "homepage": "https://github.com/RinatValiullov/dropdown-component#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0"
+  }
+}
