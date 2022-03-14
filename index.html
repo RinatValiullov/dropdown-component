@@ -19,16 +19,68 @@
 
     body {
       display: grid;
+      font-size: 2rem;
       height: 100vh;
+      justify-content: center;
       margin: 0;
-      place-items: center;
+      overflow: hidden;
+    }
+
+    .dropdown {
+      margin-top: 15rem;
+      position: relative;
+      width: 400px;
+    }
+
+    .dropdown.open .dropdown__menu {
+      display: block;
+    }
+
+    .dropdown__label {
+      border: 1px solid #333;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+      width: 100%;
+    }
+
+    .dropdown__menu {
+      border: 1px solid #333;
+      border-radius: 5px;
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px 0 10px;
+      position: absolute;
+      top: 50px;
+      width: 100%;
+    }
+
+    .dropdown__menu li {
+      padding: 5px 10px;
+    }
+
+    .dropdown__menu li:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
 
-  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quaerat quis dolores distinctio sed ipsum!
+  <div class="dropdown open">
+
+    <div class="dropdown__label">
+      Selected
+    </div>
+
+    <ul class="dropdown__menu">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
   </div>
 
   <script src="./dropdown.js"></script>
